@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videoconferência Simples</title>
+    <link rel="stylesheet" href="estiloVideoConf.css">
+</head>
+<body>
+    <div class="container">
+        <div id="topo">
+            <h1>Videoconferência MedOn</h1>
+            <div class="acoes-usuario">
+                <button id="btnMic">Ativar/Desativar Microfone</button>
+                <button id="btnCamera">Ativar/Desativar Câmera</button>
+                <button id="btnSair">Sair</button>
+            </div>
+        </div>
+
+        <div id="video-local">
+            <h2>Seu Vídeo</h2>
+            <video id="videoLocal"></video>
+        </div>
+
+        <div id="video-remoto">
+            <h2>Vídeo do Participante</h2>
+            <video id="videoRemoto"></video>
+        </div>
+
+        <div id="chat">
+            <h2>Chat</h2>
+            <input type="text" id="mensagem" placeholder="Digite sua mensagem">
+            <button id="btnEnviar">Enviar</button>
+            <ul id="mensagens-chat"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

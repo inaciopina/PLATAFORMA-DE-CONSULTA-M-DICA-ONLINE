@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Agendamento de Consultas</title>
+  <link rel="stylesheet" href="estiloAgenda.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap">
+</head>
+<body>
+  <header>
+    <h1>Agendamento de Consultas</h1>
+  </header>
+
+  <main>
+    <section id="especialidades">
+      <h2>Selecione a Especialidade:</h2>
+      <select id="especialidade">
+        <option value="">Todas</option>
+        <option value="Clinica Geral">Clínica Geral</option>
+        <option value="Cardiologia">Cardiologia</option>
+        <option value="Dermatologia">Dermatologia</option>
+        <option value="Pediatria">Pediatria</option>
+        <option value="Neurologia">Neurologia</option>
+        <option value="Ortopedia">Ortopedia</option>
+      </select>
+    </section>
+
+    <section id="medicos">
+      <h2>Escolha o Médico:</h2>
+      <select id="medicos-select">
+         <option value="">Selecione o Médico</option>
+         <option value="drSilva">Dr. Silva</option>
+         <option value="draOliveira">Dra. Oliveira</option>
+         <option value="drSouza">Dr. Souza</option>
+         <option value="draSantos">Dra. Santos</option>
+         <option value="draPereira">Dra. Pereira</option>
+        <option value="drCosta">Dr. Costa</option>
+         </select>
+    </section>
+
+    <section id="horarios">
+      <h2>Selecione o Horário:</h2>
+      <select id="lista-horarios">
+        <option value="">Selecione o Horário</option>
+         <option value="09:00">09:00</option>
+         <option value="10:00">10:00</option>
+         <option value="10:30">10:30</option>
+         <option value="11:10">11:10</option>
+         <option value="11:35">11:35</option>
+        <option value="13:40">13:40</option>
+      </select>
+    </section>
+
+    <section id="dados-consulta">
+      <h2>Dados da Consulta:</h2>
+      <form id="formulario-consulta">
+        <label for="nome">Nome Completo:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="data">Data:</label>
+        <input type="date" id="data" name="data" required>
+
+        <label for="hora">Hora:</label>
+        <input type="time" id="hora" name="hora" required>
+
+        <label for="motivo">Motivo da Consulta:</label>
+        <textarea id="motivo" name="motivo" rows="5" required></textarea>
+
+        <button type="submit">Agendar Consulta</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 - Sistema de Agendamento de Consultas</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

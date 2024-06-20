@@ -1,0 +1,31 @@
+.container {
+    background-color: white;
+    text-align: center;
+    margin: 20px auto;
+    width: 80%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Ou use auto-fit para colunas flexíveis */
+    grid-gap: 30px; /* Aumente o espaçamento entre os botões */
+    justify-content: center; /* Centralize os botões na horizontal */
+    align-items: center; /* Centralize os botões na vertical */
+}
+
+.botao {
+    background-color: #0021d9;
+    color: white;
+    padding: 25px 35px; /* Aumente o padding para botões maiores */
+    font-size: 18px; /* Aumente o tamanho da fonte */
+    border: none;
+    border-radius: 15px; /* Aumente o raio de borda para botões mais arredondados */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.botao:hover {
+    background-color: #0018b3;
+}
+
+

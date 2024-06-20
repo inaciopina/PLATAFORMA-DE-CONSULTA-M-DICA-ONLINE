@@ -1,0 +1,140 @@
+
+body {
+    font-family: 'Open Sans', sans-serif; 
+    margin: 0;
+    padding: 20px;
+    background-color: #013646; 
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #fff; 
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #000000; 
+}
+
+/* Estilos para Menu */
+
+.menu {
+    margin-bottom: 20px;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.btn-menu {
+    padding: 8px 15px;
+    background-color: #e0f2f1; 
+    color: #15088b; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: 'Merriweather', serif; 
+}
+
+.btn-menu:hover {
+    background-color: #e3f098; 
+}
+
+/* Estilos para Telas */
+
+.tela {
+    display: none; /* Esconde todas as telas inicialmente */
+}
+
+.tela.active {
+    display: block; /* Exibe a tela ativa */
+}
+
+/* Login */
+
+#login form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#login label {
+    margin-bottom: 5px;
+}
+
+#login input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 250px;
+}
+
+#login button {
+    padding: 8px 20px;
+    background-color: #2514c4; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilos para Seleção de Paciente */
+
+#selecao-paciente #busca-paciente {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+#selecao-paciente table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+#selecao-paciente th,
+#selecao-paciente td {
+    padding: 8px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+#selecao-paciente th {
+    background-color: #ebf1c5; 
+}
+
+#selecao-paciente .btn-selecionar {
+    padding: 5px 10px;
+    background-color: #2514c4; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilos para Histórico de Prescrições */
+
+#historico-prescricoes table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+#historico-prescricoes th

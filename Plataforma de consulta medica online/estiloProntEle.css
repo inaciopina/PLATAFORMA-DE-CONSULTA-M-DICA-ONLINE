@@ -1,0 +1,130 @@
+/* Estilos Básicos */
+
+body {
+    font-family: 'Open Sans', sans-serif; /* Fonte Open Sans */
+    margin: 0;
+    padding: 20px;
+    background-color: #013646; 
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background-color: #fff; /* Branco */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: black; /* Azul escuro */
+}
+
+/* Estilos para Menu */
+
+.menu {
+    margin-bottom: 20px;
+    background-color: white; /* Azul escuro */
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.btn-menu {
+    padding: 8px 15px;
+    background-color: #15088b; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Merriweather', serif; 
+    transition: background-color 0.3s ease;
+}
+
+.btn-menu:hover {
+    background-color: #00BCD4; /* Azul claro mais escuro */
+}
+
+/* Estilos para Telas */
+
+.tela {
+    display: none; /* Esconde todas as telas inicialmente */
+    padding: 20px;
+}
+
+.tela.active {
+    display: block; /* Exibe a tela ativa */
+}
+
+/* Estilos para Tela de Consulta de Paciente */
+
+#consulta-paciente form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#consulta-paciente label {
+    margin-bottom: 5px;
+    color: #333; /* Azul escuro */
+}
+
+#consulta-paciente input,
+#consulta-paciente select {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 250px;
+}
+
+#consulta-paciente button {
+    padding: 8px 20px;
+    background-color: #03A9F4; /* Azul claro */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#consulta-paciente button:hover {
+    background-color: #00BCD4; /* Azul claro mais escuro */
+}
+
+#dados-paciente {
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #fff; /* Branco */
+}
+
+#dados-paciente h3 {
+    color: #333; /* Azul escuro */
+    margin-bottom: 10px;
+}
+
+#dados-paciente p {
+    color: #666; /* Cinza escuro */
+    margin-bottom: 5px;
+}
+
+#abrir-prontuario {
+    padding: 8px 20px;
+    background-color: #03A9F4; /* Azul claro */
+    color:

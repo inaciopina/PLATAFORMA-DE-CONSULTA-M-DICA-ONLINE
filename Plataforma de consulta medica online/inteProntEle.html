@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Integração com Prontuário Eletrônico</title>
+    <link rel="stylesheet" href="estiloProntEle.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Integração com Prontuário Eletrônico</h1>
+
+        <nav class="menu">
+            <ul>
+                <button class="btn-menu" onclick="exibirConsultaPaciente()">Consulta Paciente</button>
+                <button class="btn-menu" onclick="exibirHistoricoProntuario()">Histórico do Prontuário</button>
+                <button class="btn-menu" onclick="exibirComunicacaoProfissional()">Comunicação entre Profissionais</button>
+            </ul>
+        </nav>
+        
+
+        <div id="consulta-paciente" class="tela">
+            <h2>Consulta Paciente</h2>
+            <form id="form-consulta-paciente">
+                <label for="nome-paciente">Nome do Paciente:</label>
+                <input type="text" id="nome-paciente" name="nome-paciente" required>
+                <label for="data-nascimento">Data de Nascimento:</label>
+                <input type="date" id="data-nascimento" name="data-nascimento" required>
+                <button type="submit">Buscar</button>
+            </form>
+            <div id="dados-paciente" style="display: none;">
+                <h3>Dados do Paciente</h3>
+                <p>Nome: <span id="nome-completo-paciente"></span></p>
+                <p>Data de Nascimento: <span id="data-nascimento-paciente"></span></p>
+                <p>Plano de Saúde: <span id="plano-saude-paciente"></span></p>
+                <button id="abrir-prontuario">Abrir Prontuário</button>
+            </div>
+        </div>
+
+        <div id="historico-prontuario" class="tela" style="display: none;">
+            <h2>Histórico do Prontuário</h2>
+            <div id="lista-prontuarios">
+                </div>
+        </div>
+
+        <div id="comunicacao-profissional" class="tela" style="display: none;">
+            <h2>Comunicação entre Profissionais</h2>
+            <form id="form-mensagem">
+                <label for="destinatario">Destinatário:</label>
+                <input type="text" id="destinatario" name="destinatario" required>
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+            <div id="mensagens-recebidas">
+                </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
